@@ -24,7 +24,7 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 //TODO Specify total number of available coins
 //TODO ((uint64_t)(-1)) equals to 18446744073709551616 coins
 //TODO or you can define number explicitly UINT64_C(858986905600000000)
-const uint64_t MONEY_SUPPLY                                  = ;
+const uint64_t MONEY_SUPPLY                                  = UINT64_C(2147483647); // Half of max 4-byte int
 const unsigned EMISSION_SPEED_FACTOR                         = 18;
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
@@ -35,7 +35,7 @@ const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE        = 600;
 //TODO Define number of digits
 const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 8;
 //TODO Define minimum fee for transactions
-const uint64_t MINIMUM_FEE                                   = ;
+const uint64_t MINIMUM_FEE                                   = 1;
 const uint64_t DEFAULT_DUST_THRESHOLD                        = MINIMUM_FEE;
 
 //TODO Define preferred block's target time
@@ -85,9 +85,9 @@ const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  200;    //by def
 const size_t   COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT         =  1000;
 
 //TODO This port will be used by the daemon to establish connections with p2p network
-const int      P2P_DEFAULT_PORT                              = ;
+const int      P2P_DEFAULT_PORT                              = 20201;
 //TODO This port will be used by the daemon to interact with simlewallet
-const int      RPC_DEFAULT_PORT                              = ;
+const int      RPC_DEFAULT_PORT                              = 20202;
 
 const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT                =  1000;
 const size_t   P2P_LOCAL_GRAY_PEERLIST_LIMIT                 =  5000;
@@ -108,8 +108,8 @@ const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1
 const std::initializer_list<const char*> SEED_NODES = {
   //"your_seed_ip1.com:8080",
   //"your_seed_ip2.com:8080",
-  164.90.161.216:20201,
-  157.245.191.155:20201
+  "164.90.161.216:20201",
+  "157.245.191.155:20201"
 };
 
 struct CheckpointData {
