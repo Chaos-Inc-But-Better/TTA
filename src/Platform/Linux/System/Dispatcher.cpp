@@ -5,6 +5,8 @@
 #include "Dispatcher.h"
 #include <cassert>
 
+#include <pthread.h>
+#include <stdexcept>
 #include <sys/epoll.h>
 #include <sys/eventfd.h>
 #include <sys/timerfd.h>

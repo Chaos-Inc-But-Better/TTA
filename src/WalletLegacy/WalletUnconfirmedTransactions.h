@@ -7,6 +7,7 @@
 #include "IWalletLegacy.h"
 #include "ITransfersContainer.h"
 
+#include <list>
 #include <unordered_map>
 #include <unordered_set>
 #include <time.h>
