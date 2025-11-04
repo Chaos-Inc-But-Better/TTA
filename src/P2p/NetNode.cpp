@@ -7,6 +7,7 @@
 #include <algorithm>
 #include <fstream>
 
+#include <boost/bind.hpp>
 #include <boost/foreach.hpp>
 #include <boost/uuid/random_generator.hpp>
 #include <boost/uuid/uuid_io.hpp>

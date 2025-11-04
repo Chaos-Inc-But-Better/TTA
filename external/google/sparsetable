@@ -68,6 +68,7 @@
 #include <inttypes.h>           // a third place for uint16_t or u_int16_t
 #endif
 #include <assert.h>             // for bounds checking
+#include <cstring>              // for memcpy and memset
 #include <iterator>             // to define reverse_iterator for me
 #include <algorithm>            // equal, lexicographical_compare, swap,...
 #include <memory>               // uninitialized_copy

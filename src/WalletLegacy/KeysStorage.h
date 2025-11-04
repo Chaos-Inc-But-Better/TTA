@@ -7,6 +7,7 @@
 #include "crypto/crypto.h"
 
 #include <stdint.h>
+#include <string>
 
 namespace CryptoNote {
 

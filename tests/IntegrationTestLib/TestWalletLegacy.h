@@ -4,6 +4,8 @@
 
 #pragma once
 
+#include <chrono>
+#include <thread>
 #include "CryptoNoteCore/Currency.h"
 #include "INode.h"
 #include "IWalletLegacy.h"
